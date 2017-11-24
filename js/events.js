@@ -12,7 +12,9 @@ function frameIt() {
 
 function submitIt() {
   $('form').on('submit', function() {
-    alert("You form is going to be submitted now.");
+    if ($( "input:first" ).val() === "correct") {
+    alert('your form is going to be submitted now');
+    return;
   })
 }
 
